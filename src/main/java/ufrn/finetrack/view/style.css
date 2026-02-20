@@ -1,0 +1,133 @@
+/* ================= Tela geral ================= */
+.root {
+    -fx-background-color: #B9F3EC; /* verde água claro */
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+/* ================= MENU SUPERIOR ================= */
+.top-menu {
+    -fx-background-color: transparent;
+}
+
+.logo {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #003F42;
+}
+
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #003F42;
+    -fx-font-size: 18px;
+    -fx-font-weight: 500;
+}
+
+/* ================= CARDS ================= */
+.card {
+    -fx-background-color: #005B63;
+    -fx-background-radius: 20;
+    -fx-padding: 30;
+    -fx-spacing: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 15, 0, 0, 5);
+}
+
+.card-title {
+    -fx-text-fill: #003F42;
+    -fx-font-size: 16px;
+}
+
+.card-title-2 {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+.card-title-big {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+/* ================= CAMPOS DE TEXTO ================= */
+.info-field {
+    -fx-background-radius: 10;
+    -fx-background-color: rgba(255,255,255,0.35);
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+    -fx-padding: 6;
+    -fx-font-size: 14px;
+}
+
+.value-label {
+    -fx-background-color: rgba(255,255,255,0.25);
+    -fx-text-fill: white;
+    -fx-padding: 8 12;
+    -fx-background-radius: 10;
+    -fx-font-size: 15px;
+    -fx-pref-width: 300;
+}
+
+/* ================= LEGENDA ================= */
+.legend-item {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+/* ================= SWITCH ================= */
+.toggle-switch {
+    -fx-background-color: #14D9A4;
+    -fx-background-radius: 15;
+    -fx-min-width: 45;
+    -fx-min-height: 22;
+}
+
+.switch-verde {
+    -fx-background-color: #14D9A4; /* verde */
+    -fx-background-radius: 15;
+}
+
+.switch-vermelho {
+    -fx-background-color: #E65454; /* vermelho */
+    -fx-background-radius: 15;
+}
+
+/* Botões de ação */
+.action-button {
+    -fx-background-color: #B9F3EC;
+    -fx-text-fill: #003F42;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20;
+    -fx-padding: 8 10;
+}
+
+.action-button-danger {
+    -fx-background-color: #FF7B7B;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20;
+    -fx-padding: 8 20;
+}
+
+/* Menu selecionado */
+.menu-button-selected {
+    -fx-background-color: transparent;
+    -fx-text-fill: #003F42;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-underline: true;
+}
+
+/* Tabela */
+.transactions-table {
+    -fx-background-color: #B9F3EC;
+    -fx-background-radius: 20;
+}
+
+.export-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #003f46;
+    -fx-font-size: 36px;
+    -fx-cursor: hand;
+}
+.export-button:hover {
+    -fx-opacity: 0.7;
+}

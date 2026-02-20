@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="ufrn.finetrack.controller.ReportsController">
+
+    <BorderPane fx:id="rootPane">
+
+        <!-- MENU SUPERIOR -->
+        <top>
+        <HBox spacing="40" styleClass="top-menu">
+            <children>
+                <Button text="FineTrack" styleClass="menu-button" onAction="#goToHome"/>
+                <Button text="Transações" styleClass="menu-button" onAction="#goToTransactions"/>
+                <Button text="Relatórios" styleClass="menu-button-selected"/>
+            </children>
+            <padding><Insets top="20" left="40" bottom="20" right="0"/></padding>
+        </HBox>
+    	</top>
+
+        <!-- CONTEÚDO CENTRAL -->
+        <center>
+            <GridPane hgap="40" vgap="40">
+                <padding>
+                    <Insets top="40" right="40" bottom="40" left="40"/>
+                </padding>
+
+                <columnConstraints>
+                    <ColumnConstraints halignment="CENTER"/>
+                    <ColumnConstraints halignment="CENTER"/>
+                </columnConstraints>
+
+                <!-- TÍTULO 1 -->
+                <Label text="DISTRIBUIÇÃO DE GASTOS"
+                       styleClass="section-title"
+                       GridPane.rowIndex="0"/>
+
+                <!-- SELECT DO MÊS -->
+                <HBox spacing="10" GridPane.rowIndex="1">
+                    <Label text="Mês:"/>
+                    <ChoiceBox fx:id="choiceMes"/>
+                </HBox>
+
+                <!-- GRÁFICO DE BARRAS -->
+                <BarChart fx:id="barCategorias"
+                          prefWidth="500"
+                          prefHeight="400"
+                          GridPane.rowIndex="2">
+    				<xAxis>
+        				<CategoryAxis fx:id="barAxisX" label="Categoria"/>
+    				</xAxis>
+    				<yAxis>
+        				<NumberAxis fx:id="barAxisY" label="Valor (R$)"/>
+    				</yAxis>
+				</BarChart>
+
+                <!-- TÍTULO 2 -->
+                <Label text="FLUXO LÍQUIDO MENSAL"
+                       styleClass="section-title"
+                       GridPane.columnIndex="1"
+                       GridPane.rowIndex="0"/>
+
+                <!-- GRÁFICO DE LINHA -->
+                <LineChart fx:id="lineFluxoMensal"
+                           prefWidth="500"
+                           prefHeight="450"
+                           GridPane.columnIndex="1"
+                           GridPane.rowIndex="2">
+                    <xAxis>
+                        <CategoryAxis fx:id="lineAxisX" label="Mês"/>
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis fx:id="lineAxisY" label="Fluxo Líquido (R$)"/>
+                    </yAxis>
+                </LineChart>
+
+            </GridPane>
+        </center>
+    </BorderPane>
+
+    <!-- BOTÃO DE EXPORTAR NO CANTO INFERIOR DIREITO -->
+    <Button fx:id="btnExportar"
+            text="⤴"
+            onAction="#handleExport"
+            styleClass="export-button"
+            StackPane.alignment="BOTTOM_RIGHT">
+        <StackPane.margin>
+            <Insets top="0" right="20" bottom="20" left="0"/>
+        </StackPane.margin>
+    </Button>
+
+</StackPane>

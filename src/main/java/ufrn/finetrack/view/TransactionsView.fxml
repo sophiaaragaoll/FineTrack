@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>  
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ufrn.finetrack.controller.TransactionsController"
+            styleClass="root">
+
+    <!-- ================= MENU SUPERIOR ================= -->
+    <top>
+        <HBox spacing="40" styleClass="top-menu">
+            <children>
+                <Button text="FineTrack" styleClass="menu-button" onAction="#goToHome"/>
+                <Button text="Transações" styleClass="menu-button-selected"/>
+                <Button text="Relatórios" styleClass="menu-button" onAction="#goToReports"/>
+            </children>
+            <padding><Insets top="20" left="40" bottom="20" right="0"/></padding>
+        </HBox>
+    </top>
+
+    <!-- ================= CORPO DA TELA ================= -->
+    <center>
+        <HBox spacing="40" alignment="CENTER" style="-fx-padding: 40;">
+
+            <!-- ================= TABELA ================= -->
+            <VBox spacing="20">
+                <children>
+
+                    <!-- SelectBox de Ordenação -->
+                    <HBox spacing="10">
+                        <children>
+                            <Label text="Organizar por:" styleClass="card-title"/>
+                            <ChoiceBox fx:id="choiceOrdenar" prefWidth="150">
+							</ChoiceBox>
+                        </children>
+                    </HBox>
+
+                    <!-- TableView -->
+                    <TableView fx:id="tableTransacoes" prefWidth="650" prefHeight="450"
+                               styleClass="transactions-table">
+                        <columns>
+
+                            <TableColumn fx:id="colTipo" text="TIPO" prefWidth="120">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="tipo"/>
+                                </cellValueFactory>
+                            </TableColumn>
+
+                            <TableColumn fx:id="colCategoria" text="CATEGORIA" prefWidth="170">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="categoria"/>
+                                </cellValueFactory>
+                            </TableColumn>
+
+                            <TableColumn fx:id="colValor" text="VALOR" prefWidth="150">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="valor"/>
+                                </cellValueFactory>
+                            </TableColumn>
+
+                            <TableColumn fx:id="colData" text="DATA" prefWidth="160">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="data"/>
+                                </cellValueFactory>
+                            </TableColumn>
+
+                        </columns>
+                    </TableView>
+
+                </children>
+            </VBox>
+
+            <!-- ================= FORMULÁRIO LATERAL ================= -->
+            <VBox spacing="25" alignment="TOP_CENTER" styleClass="card" prefWidth="350">
+
+                <children>
+
+                    <!-- Tipo -->
+                    <VBox spacing="5">
+                        <children>
+                            <Label text="TIPO" styleClass="card-title-2"/>
+                            <ChoiceBox fx:id="choiceTipo" prefWidth="250"/>
+                        </children>
+                    </VBox>
+
+                    <!-- Categoria -->
+                    <VBox spacing="5">
+                        <children>
+                            <Label text="CATEGORIA" styleClass="card-title-2"/>
+                            <ChoiceBox fx:id="choiceCategoria" prefWidth="250"/>
+                        </children>
+                    </VBox>
+
+                    <!-- Valor -->
+                    <VBox spacing="5">
+                        <children>
+                            <Label text="VALOR" styleClass="card-title-2"/>
+                            <TextField fx:id="txtValor" styleClass="info-field"/>
+                        </children>
+                    </VBox>
+
+                    <!-- Data -->
+                    <VBox spacing="5">
+                        <children>
+                            <Label text="DATA" styleClass="card-title-2"/>
+                            <DatePicker fx:id="dateData" prefWidth="250"/>
+                        </children>
+                    </VBox>
+
+                    <!-- Botões -->
+                    <HBox spacing="15" alignment="CENTER">
+                        <children>
+                            <Button text="ADICIONAR" onAction="#handleAdd" styleClass="action-button"/>
+                            <Button text="EDITAR" onAction="#handleEdit" styleClass="action-button"/>
+                            <Button text="REMOVER" onAction="#handleRemove" styleClass="action-button-danger"/>
+                        </children>
+                    </HBox>
+
+                </children>
+            </VBox>
+
+        </HBox>
+    </center>
+
+</BorderPane>
