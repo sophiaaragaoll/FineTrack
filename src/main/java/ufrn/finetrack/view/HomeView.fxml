@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ufrn.finetrack.controller.HomeController"
+            styleClass="root">
+
+    <!-- ================= MENU SUPERIOR ================= -->
+    <top>
+        <HBox spacing="40" styleClass="top-menu">
+            <children>
+                <Label text="FineTrack" styleClass="logo"/>
+                <Button text="Transações" styleClass="menu-button" onAction="#goToTransactions"/>
+                <Button text="Relatórios" styleClass="menu-button" onAction="#goToReports"/>
+            </children>
+            <padding><Insets top="20" left="40" bottom="20" right="0"/></padding>
+        </HBox>
+    </top>
+
+
+    <!-- ================= ÁREA CENTRAL ================= -->
+    <center>
+        <HBox alignment="CENTER" spacing="50" style="-fx-padding: 40;">
+            <children>
+
+                <!-- =========== Card Esquerdo =========== -->
+                <VBox spacing="20" styleClass="card" prefWidth="450">
+                    <children>
+
+                        <Label styleClass="card-title-2" text="Receitas totais do mês"/>
+						<Label fx:id="lblTotalReceitas" styleClass="value-label" text="R$ 0,00"/>
+
+						<Label styleClass="card-title-2" text="Despesas totais do mês"/>
+						<Label fx:id="lblTotalDespesas" styleClass="value-label" text="R$ 0,00"/>
+						
+						<Label styleClass="card-title-2" text="Fluxo líquido"/>
+						<Label fx:id="lblFluxoLiquido" styleClass="value-label" text="R$ 0,00"/>
+
+
+                        <HBox spacing="15" alignment="CENTER_LEFT">
+                            <children>
+                                <Label text="Situação financeira" styleClass="card-title-2"/>
+                                <ToggleButton fx:id="toggleSituacao" styleClass="toggle-switch"/>
+                            </children>
+                        </HBox>
+
+                    </children>
+                </VBox>
+
+
+                <!-- =========== Card Direito =========== -->
+                <VBox spacing="20" styleClass="card" prefWidth="500" alignment="TOP_CENTER">
+                    <children>
+
+                        <Label text="Distribuição de gastos" styleClass="card-title-big"/>
+
+                        <PieChart fx:id="pieGastos" prefWidth="350" prefHeight="300"/>
+
+                        <HBox alignment="CENTER" spacing="20">
+                            <children>
+                                <Label text=" " styleClass="legend-item"/>
+                                <Label text=" " styleClass="legend-item"/>
+                                <Label text=" " styleClass="legend-item"/>
+                            </children>
+                        </HBox>
+
+                    </children>
+                </VBox>
+
+            </children>
+        </HBox>
+    </center>
+
+</BorderPane>
