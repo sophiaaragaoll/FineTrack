@@ -1,0 +1,10 @@
+Relatório Financeiro - 2025-12
+-----------------------------------------
+Total de Receitas: R$ 1400.0
+Total de Despesas: R$ 1390.0
+Saldo do Mês: R$ 10.0
+
+Gastos por Categoria:
+ - CONTAS: R$ 900.0
+ - COMIDA: R$ 400.0
+ - LAZER: R$ 90.0

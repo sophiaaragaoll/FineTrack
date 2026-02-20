@@ -1,0 +1,135 @@
+[
+  {
+    "id": "5e5a9400-46c2-49e5-8724-d48343c9c281",
+    "tipo": "RECEITA",
+    "categoria": "SALARIO",
+    "valor": 2500.0,
+    "data": "2025-11-05"
+  },
+  {
+    "id": "557dc6b8-efb3-41c4-8c5e-446aed18389c",
+    "tipo": "DESPESA",
+    "categoria": "TRANSPORTE",
+    "valor": 20.0,
+    "data": "2025-10-09"
+  },
+  {
+    "id": "71a77f47-d203-4b92-ac4b-871a95cb14aa",
+    "tipo": "RECEITA",
+    "categoria": "BOLSA",
+    "valor": 700.0,
+    "data": "2025-09-07"
+  },
+  {
+    "id": "1af96860-7086-448c-9b0f-9faa89aa7df5",
+    "tipo": "RECEITA",
+    "categoria": "BOLSA",
+    "valor": 400.0,
+    "data": "2025-12-10"
+  },
+  {
+    "id": "29ceeea8-c124-4fdb-a863-29e166bb8525",
+    "tipo": "DESPESA",
+    "categoria": "CONTAS",
+    "valor": 900.0,
+    "data": "2025-12-25"
+  },
+  {
+    "id": "ad95ed18-f671-41df-8509-7c070e106cdf",
+    "tipo": "DESPESA",
+    "categoria": "COMIDA",
+    "valor": 400.0,
+    "data": "2025-12-17"
+  },
+  {
+    "id": "3fc7ad5a-62a4-4c1c-a31e-6f3838ee971a",
+    "tipo": "DESPESA",
+    "categoria": "LAZER",
+    "valor": 90.0,
+    "data": "2025-12-31"
+  },
+  {
+    "id": "c77375cc-357b-4106-8565-d397d0980302",
+    "tipo": "RECEITA",
+    "categoria": "SALARIO",
+    "valor": 1000.0,
+    "data": "2025-12-16"
+  },
+  {
+    "id": "d42a580a-e91b-4e40-b6f9-a9e69e8e2671",
+    "tipo": "DESPESA",
+    "categoria": "TRANSPORTE",
+    "valor": 400.0,
+    "data": "2023-10-10"
+  },
+  {
+    "id": "8e8151a1-56df-4e4d-94cf-e49a66719c60",
+    "tipo": "RECEITA",
+    "categoria": "BOLSA",
+    "valor": 700.0,
+    "data": "2023-11-07"
+  },
+  {
+    "id": "6695ca5e-c1c9-44cb-b70c-c1a3bae81385",
+    "tipo": "DESPESA",
+    "categoria": "SAUDE",
+    "valor": 200.0,
+    "data": "2024-12-03"
+  },
+  {
+    "id": "a856d123-7fcd-4e5b-aa9b-89028d699624",
+    "tipo": "RECEITA",
+    "categoria": "BOLSA",
+    "valor": 600.0,
+    "data": "2023-12-08"
+  },
+  {
+    "id": "d573e08e-5b91-405f-86e9-4daa99aa0d3e",
+    "tipo": "RECEITA",
+    "categoria": "VENDA",
+    "valor": 4000.0,
+    "data": "2025-12-03"
+  },
+  {
+    "id": "cd378421-b1e7-492c-840d-a43fd0f33414",
+    "tipo": "DESPESA",
+    "categoria": "EDUCACAO",
+    "valor": 1000.0,
+    "data": "2024-12-24"
+  },
+  {
+    "id": "98108dde-1522-4b16-a53f-688f22af2ede",
+    "tipo": "RECEITA",
+    "categoria": "BOLSA",
+    "valor": 700.0,
+    "data": "2024-11-04"
+  },
+  {
+    "id": "a9226092-df8d-4e4e-9fbc-a1b7eac6f62d",
+    "tipo": "DESPESA",
+    "categoria": "TRANSPORTE",
+    "valor": 90.0,
+    "data": "2024-11-13"
+  },
+  {
+    "id": "dbfe038f-fafb-4370-8d62-6fefbbdf26bc",
+    "tipo": "RECEITA",
+    "categoria": "SALARIO",
+    "valor": 1500.0,
+    "data": "2025-12-11"
+  },
+  {
+    "id": "9837f6b5-8dff-4578-a2d8-b6e2b8e64a34",
+    "tipo": "DESPESA",
+    "categoria": "LAZER",
+    "valor": 500.0,
+    "data": "2025-12-05"
+  },
+  {
+    "id": "e5235761-63a4-421b-a6af-917ad94ed933",
+    "tipo": "DESPESA",
+    "categoria": "CONTAS",
+    "valor": 500.0,
+    "data": "2024-12-11"
+  }
+]
